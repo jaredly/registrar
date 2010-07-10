@@ -1,6 +1,4 @@
-I often find myself writing meta decorators:
-
-.. code-block:: python
+I often find myself writing meta decorators::
 
     _reg = {}
     def register(name):
@@ -11,9 +9,7 @@ I often find myself writing meta decorators:
 
 Or some such thing. And that solution is very often enough. But, for the times when you need a bit more control, I've created ``Registrar``. The situation that prompted me to write this was within the confines of a class -- and the functions were being "registered" before they became bound...
 
-Anyway, here's a sample of Registrar in action:
-
-.. code-block:: python
+Anyway, here's a sample of Registrar in action::
 
     from registrar import NamedRegistrar
 
